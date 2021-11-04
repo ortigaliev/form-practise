@@ -41,6 +41,10 @@ img{
   margin-right: auto;
 }
 
+*:focus{
+outline: 3px dotted #655af2;
+}
+
 /* MAIN CONTENT */
 .site-main{
   display: flex;
@@ -51,6 +55,8 @@ img{
 .content-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
 }
 .content-group {
@@ -58,6 +64,7 @@ img{
 .bg-content {
   width: calc(50% - 6px);
   padding-top: 55px;
+  height: 640px;
   background-image: url(/img/hero.jpg);
   background-size: cover;
   background-position: center center;
@@ -95,7 +102,7 @@ img{
   margin-top: 25px;
   margin-left: 60px;
   margin-right: 163px;
-  padding-bottom: 203px;
+  margin-bottom: 203px;
   font-style: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -133,7 +140,10 @@ img{
 
 /* FORM SECTION */
 .content-form-card {
+  margin: 0;
+  padding: 0;
   width:50%;
+  height: 640px;
   padding-top: 55px;
   padding-right: 60px;
   padding-left: 60px;
@@ -144,6 +154,8 @@ img{
 
 }
 .form-heading {
+  margin: 0;
+  padding: 0;
   margin-bottom: 79px;
   font-size: 32px;
   line-height: 42px;
@@ -154,6 +166,8 @@ img{
 }
 .form-field {
   display: inline-block;
+  margin: 0;
+  padding: 0;
   width: 100%;
   padding-right: 11px;
   padding-bottom: 11px;
@@ -193,6 +207,7 @@ img{
 .term-condition {
   margin: 0;
   margin-top: 8px;
+  margin-bottom: 40px;
   font-size: 11px;
   line-height: 15px;
   font-weight: 500;
