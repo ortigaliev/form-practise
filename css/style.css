@@ -1,3 +1,12 @@
+/* Custom Props */
+:root{
+  --body-bg: #f1f4ff;
+  --purple: #655af2;
+  --green: #4dc490;
+  --red: #f03535;
+}
+
+
 /* GLOBAL STYLES */
 
 html{
@@ -42,14 +51,14 @@ img{
 }
 
 *:focus{
-outline: 3px dotted #655af2;
+outline: 3px dotted var(--purple);
 }
 
 /* MAIN CONTENT */
 .site-main{
   display: flex;
   flex-grow: 1;
-  background-color: #f1f4ff;
+  background-color: var(--body-bg);
 }
 
 .content-wrapper {
@@ -59,8 +68,7 @@ outline: 3px dotted #655af2;
   margin-bottom: 80px;
 
 }
-.content-group {
-}
+
 .bg-content {
   width: calc(50% - 6px);
   padding-top: 55px;
@@ -73,6 +81,7 @@ outline: 3px dotted #655af2;
   content:"";
   border-radius: 20px;
 }
+
 .bg-content-link {
   display: inline-block;
   margin: 0;
@@ -85,8 +94,8 @@ outline: 3px dotted #655af2;
   font-weight: 500;
   text-decoration: none;
   color: #fff;
-
 }
+
 .bg-content-header {
   margin-top: 60px;
   margin-left: 60px;
@@ -98,6 +107,7 @@ outline: 3px dotted #655af2;
   border: 0;
   color: #fff;
 }
+
 .bg-content-text {
   margin-top: 25px;
   margin-left: 60px;
@@ -107,6 +117,7 @@ outline: 3px dotted #655af2;
   line-height: 26px;
   font-weight: 400;
 }
+
 .bg-content-button {
   width: 100%;
   margin: 0;
@@ -115,7 +126,7 @@ outline: 3px dotted #655af2;
   padding-bottom: 30px;
   padding-left: auto;
   padding-right: auto;
-  background-color: #4dc490;
+  background-color: var(--green);
   border: 0;
   border-radius: 0px 0px 20px 20px;
   font-size: 19px;
@@ -126,17 +137,14 @@ outline: 3px dotted #655af2;
 }
 
 .bg-content-button:hover{
-  background-color: #4d665b;
+  background-color: var(--green);
   opacity: 0.8;
 }
 
 .bg-content-button:active{
-  background-color: #4d665b;
+  background-color: var(--green);
   opacity: 0.6;
 }
-.button {
-}
-
 
 /* FORM SECTION */
 .content-form-card {
@@ -200,7 +208,7 @@ outline: 3px dotted #655af2;
   line-height: 19px;
   font-weight: 600;
   color: #fff;
-  background-color: #655af2;
+  background-color: var(--purple);
   border: 0;
   border-radius: 10px;
 }
@@ -216,9 +224,9 @@ outline: 3px dotted #655af2;
 }
 
 .term-condition-span {
-  color: #f03535
+  color: var(--red);
 }
 .term-condition-link {
-  color: #f03535;
+  color: var(--red);
 
 }
