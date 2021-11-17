@@ -4,6 +4,7 @@
   --purple: #655af2;
   --green: #4dc490;
   --red: #f03535;
+  --text-color: #000;
 }
 
 
@@ -30,8 +31,8 @@ body{
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: #fff;
-  color: #fff;
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 
 img{
@@ -43,7 +44,7 @@ img{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1140px;
+  max-width: 1192px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -51,14 +52,15 @@ img{
 }
 
 *:focus{
-outline: 3px dotted var(--purple);
+  outline: 3px dotted var(--purple);
 }
 
 /* MAIN CONTENT */
 .site-main{
   display: flex;
   flex-grow: 1;
-  background-color: var(--body-bg);
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .content-wrapper {
@@ -71,7 +73,6 @@ outline: 3px dotted var(--purple);
 
 .bg-content {
   width: calc(50% - 6px);
-  padding-top: 55px;
   height: 640px;
   background-image: url(/img/hero.jpg);
   background-size: cover;
@@ -82,10 +83,17 @@ outline: 3px dotted var(--purple);
   border-radius: 20px;
 }
 
+.bg-badge{
+  padding-top: 55px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 0;
+  margin-bottom: 240px;
+}
+
 .bg-content-link {
   display: inline-block;
   margin: 0;
-  margin-left: 60px;
   padding: 5px 15px;
   border: 1px solid #fff;
   border-radius: 40px;
@@ -97,8 +105,6 @@ outline: 3px dotted var(--purple);
 }
 
 .bg-content-header {
-  margin-top: 60px;
-  margin-left: 60px;
   margin-right: 121px;
   font-size: 36px;
   line-height: 46px;
@@ -110,16 +116,16 @@ outline: 3px dotted var(--purple);
 
 .bg-content-text {
   margin-top: 25px;
-  margin-left: 60px;
   margin-right: 163px;
-  margin-bottom: 203px;
   font-style: 16px;
   line-height: 26px;
   font-weight: 400;
+  color: #fff;
 }
 
 .bg-content-button {
   width: 100%;
+  height: 80px;
   margin: 0;
   padding: 0;
   padding-top: 30px;
